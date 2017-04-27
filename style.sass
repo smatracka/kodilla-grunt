@@ -1,0 +1,737 @@
+.col-1 
+	width: 8.33%
+.col-2 
+	width: 16.66%
+.col-3 
+	width: 25%
+.col-4 
+	width: 33.33%
+.col-5 
+	width: 41.66%
+.col-6 
+	width: 50%
+.col-7 
+	width: 58.33%
+.col-8 
+	width: 66.66%
+.col-9 
+	width: 75%
+.col-10 
+	width: 83.33%
+.col-11 
+	width: 91.66%
+.col-12 
+	width: 100%
+
+.col-offset-0 
+	margin-left: 0
+.col-offset-1 
+	margin-left: 8.33%
+.col-offset-2 
+	margin-left: 16.66%
+.col-offset-3 
+	margin-left: 25%
+.col-offset-4 
+	margin-left: 33.33%
+.col-offset-5 
+	margin-left: 41.66%
+.col-offset-6 
+	margin-left: 50%
+.col-offset-7 
+	margin-left: 58.33%
+.col-offset-8 
+	margin-left: 66.66%
+.col-offset-9 
+	margin-left: 75%
+.col-offset-10 
+	margin-left: 83.33%
+.col-offset-11 
+	margin-left: 91.66%
+.col-offset-12 
+	margin-left: 100%
+
+$sara-grey: #313135
+
+* 
+	box-sizing: border-box
+
+
+body 
+	margin: 0
+	font-family: 'Open Sans', sans-serif
+
+
+[class*='col-'] 
+	float: left
+	min-height: 1px
+	padding-bottom: 20px
+	border 0.5px
+
+
+.container 
+	max-width: 1200px
+	margin: 0 auto
+	font-family: 'Ubuntu', sans-serif
+
+
+.row:before,
+.row:after,
+.clearfix 
+    content: " "
+    display: table
+    clear: both
+
+
+/* NAGŁÓWEK */
+
+header 
+	background: #313234
+	height: 50px
+
+
+	nav ul 
+		margin: 0
+		padding: 0
+		list-style-type: none
+		float: right
+
+
+		li 
+			display: inline-block
+			float: left
+
+
+			a 
+				line-height: 50px
+				display: block
+				color: #fff
+				padding: 0 20px
+				text-decoration: none
+				text-transform: uppercase
+
+
+			a:hover 
+				background: #ccc
+				transition-duration: 0.4s
+
+
+		img 
+		  padding: 10px 0
+
+
+/* SEKCJA POWITALNA */
+.hero 
+	width: 100%
+	height: 650px
+	background-image: url("https://d2lm6fxwu08ot6.cloudfront.net/img-thumbs/960w/0P9709P1DQ.jpg")
+	background-repeat: no-repeat
+	background-position: center
+	background-size: cover
+	background-attachment: fixed
+
+
+.slogan 
+	background-color: rgba(77, 77, 77, 0.4)
+	float: right
+	max-width: 1000px
+	padding: 15px 150px 15px 15px
+	color: #fff
+	margin-top: 150px
+
+
+.slogan-headers
+	font-size: 2.5rem
+	line-height: 80%
+	text-transform: uppercase
+	margin-top: 10px
+
+.slogan h1 
+	@extend .slogan-headers
+	font-weight: 100
+
+
+.slogan h2 
+	@extend .slogan-headers
+	font-weight: 700
+
+
+/* SEKCJA KORZYŚCI */
+
+section > .container 
+	margin: 50px auto
+	text-align: center
+
+
+.benefits .fa 
+	font-size: 80px
+	padding: 30px
+	color: #fff
+	background-color: $sara-grey
+	margin-bottom: 20px
+	border-radius: 25px
+
+
+.benefits a 
+	text-decoration: none
+	text-transform: uppercase
+	color: $sara-grey
+
+.benefits a:hover, .benefits .fa 
+	color: #00C7E8
+	transition-duration: 0.5s
+	cursor: pointer
+	
+
+.benefits p 
+	color: #8b8b8d
+	margin: 0 auto
+	padding-top: 50px
+
+.benefits h3 
+	margin: 0 auto
+
+.works h1 
+	text-align: center
+	text-transform: uppercase
+	color: $sara-grey
+	font-weight: 800
+	font-size: 45px
+
+.works p 
+	text-align: center
+	color: #8b8b8d
+	font-size: 17px
+
+
+/* GALERIA */
+
+.journal 
+  background-image: url("https://d2lm6fxwu08ot6.cloudfront.net/img-thumbs/960w/AEQ5CG8LVJ.jpg")
+
+
+.shoes 
+  background-image: url("https://d2lm6fxwu08ot6.cloudfront.net/img-thumbs/960w/ACHISO5J2J.jpg")
+
+
+.notes 
+  background-image: url("https://d2lm6fxwu08ot6.cloudfront.net/img-thumbs/960w/A1UYWDQOXE.jpg")
+
+.pendrive 
+  background-image: url("https://d2lm6fxwu08ot6.cloudfront.net/img-thumbs/960w/N2J4OE9KPF.jpg")
+
+.pencil 
+  background-image: url("https://d2lm6fxwu08ot6.cloudfront.net/img-thumbs/960w/TBLSDTI1UL.jpg")
+  
+.window 
+  background-image: url("https://d2lm6fxwu08ot6.cloudfront.net/img-thumbs/960w/JQLWMUC4GD.jpg")
+  
+.gallery [class*="col-"] 
+	padding: 0
+
+
+.picture-small, .journal, .shoes, .notes, .pendrive 
+	height: 200px
+	background-size: cover
+	background-repeat: no-repeat
+	max-width: 33.33%
+	background-position: center
+	position: relative
+
+.picture-big, .pencil, .window 
+	height: 200px
+	background-size: cover
+	background-repeat: no-repeat
+	background-position: center
+	max-width: 66.66%
+	position: relative
+
+
+.layer-picture, 
+.journal .layer, 
+.shoes .layer, 
+.notes .layer, 
+.pendrive .layer, 
+.pencil .layer, 
+.window .layer 
+	position: absolute
+	width: 100%
+	height: 100%
+	line-height: 200px
+	color: #000
+	display: flex
+	justify-content: center
+	align-items: center
+
+.layer:hover 
+	background: rgba(0, 0, 0, 0.5)
+	position: absolute
+	width: 100%
+	height: 100%
+
+.journal i 
+	visibility: hidden
+	font-size: 25px
+
+.layer-picture-hover, 
+.journal .layer:hover, 
+.shoes .layer:hover, 
+.notes .layer:hover, 
+.pendrive .layer:hover, 
+.pencil .layer:hover, 
+.window .layer:hover 
+	background-color: rgba(0, 0, 0, 0.5)
+	cursor: pointer
+	transition-duration: 0.8s
+
+.picture-hover-i-fa, 
+.journal:hover i, 
+.shoes:hover i, 
+.notes:hover i, 
+.pendrive:hover i, 
+.pencil:hover i, 
+.window:hover i 
+	visibility: visible
+	background-color: #fff
+	margin: 10px
+	padding: 4px
+	border-radius: 15%
+
+.picture-i-fa, 
+.shoes i, 
+.notes i, 
+.pendrive i, 
+.pencil i, 
+.window i 
+	visibility: hidden
+	font-size: 25px
+
+/* ZESPÓŁ */
+
+.team [class*="col-"] 
+	padding: 0
+
+.team img 
+	border-radius: 50%
+	width: 100%
+	height: 100%
+	display: block
+	object-fit: cover
+
+.team h2 
+	color: #8b8b8d
+	text-align: center
+
+.circle 
+	position: relative
+	height: 240px
+	width: 240px
+	margin: 0 auto
+
+.circle-layer 
+	position: absolute
+	width: 100%
+	height: 100%
+	line-height: 240px
+	text-align: center
+	border-radius: 50%
+	color: #fff
+	display: flex
+	justify-content: center
+	align-items: center
+
+.circle-layer h3 
+	visibility: hidden
+	font-size: 25px
+
+.circle-layer:hover 
+	background-color: rgba(0, 0, 0, 0.5)
+	cursor: pointer
+	transition-duration: 0.8s
+
+
+	h3 
+		visibility: visible
+
+
+/* OBRAZEK */
+
+.picture [class*="col-"] 
+	padding: 0
+	float: left
+	min-height: 1px
+	padding-bottom: 20px
+	border: 0.5px
+
+.picture 
+	max-width: 100%
+	height: auto
+
+.ipad img 
+	max-width: 100%
+	height: auto
+	padding: 5% 5%
+
+.title-picture h2 
+	padding-top: 25px
+	text-transform: uppercase
+	text-align: center
+	font-size: 35px
+	font-weight: 700
+	color: #fff
+
+.title-picture p 
+	font-size: 13px
+	padding: 0 5%
+
+/*KILKA LICZB*/
+.numbers [class*="col-"] 
+	padding: 0
+	
+.numbers
+	margin: 0 auto
+	width: 100%
+	max-height: 300px
+	display: block
+
+	h3 
+		text-align: center
+		text-transform: uppercase
+		color: $sara-grey
+		font-weight: 900
+		font-size: 75px
+		font-family: "Ubuntu", sans-serif
+		margin-bottom: 5px
+
+	h4
+		text-transform: uppercase
+		color: #00C7E8
+		font-size: 20px
+		font-weight: 700
+		line-height: 20px
+		margin-top: 15px
+
+
+
+/* STOPKA */
+.contact-us [class*="col-"] 
+	text-align: left
+	font-family: "Raleway", sans-serif
+	
+.contact-us 
+	float: left
+	background-color: #313234
+	width: 100%
+	height: 460px
+	color: #fff
+	display: block
+	position: center
+
+	h2 
+		text-align: left
+		text-transform: uppercase
+		font-size: 30px
+		padding: 15px 8px
+
+	h2:after
+		padding-left: 10px
+		letter-spacing: -3px
+		content: ""
+		color: #fff
+
+	p 
+		color: #fff
+		letter-spacing: 2px
+		font-size: 15px
+		font-weight: 500
+
+.social i
+	text-align: center
+	font-size: 20px
+	height: 40px
+	width: 40px
+	color: #fff
+	padding: 10px
+	margin: 20px 15px 0 0
+	background-color: #00C7E8
+	float: left
+
+.social i:hover 
+	background-color: #fff
+	color: #00C7E8
+	transition: 0.6s
+	cursor: pointer
+
+/* BREAKPOINTY */
+
+/* TABLETY */
+
+@media (max-width: 767px) 
+	.col-s-1 
+		width: 8.33%
+	.col-s-2 
+		width: 16.66%
+	.col-s-3 
+		width: 25%
+	.col-s-4 
+		width: 33.33%
+	.col-s-5 
+		width: 41.66%
+	.col-s-6 
+		width: 50%
+	.col-s-7 
+		width: 58.33%
+	.col-s-8 
+		width: 66.66%
+	.col-s-9 
+		width: 75%
+	.col-s-10 
+		width: 83.33%
+	.col-s-11 
+		width: 91.66%
+	.col-s-12 
+		width: 100%
+	.col-offset-s-0 
+		margin-left: 0
+
+	[class*="col-"] 
+		float: left
+		width: 100%
+		padding: 12px
+
+/*NAGŁÓWEK */
+header 
+	height: auto
+	position: relative
+
+	nav ul 
+		margin: 0
+		padding: 0
+		float: none
+
+		li 
+			display: block
+			text-align: center
+			font-weight: 600
+
+			a 
+				line-height: 40px
+				font-size: 100%
+
+	nav img
+		display: block
+		margin: 0 auto
+
+/* SEKCJA POWITALNA */
+.hero
+	height: 80vh
+	display: flex
+	justify-content: flex-end
+	align-items: center
+
+.slogan 
+	max-width: 100%
+	margin-top: 50px
+
+	h1 
+		font-size: 25px
+
+	h2 
+		font-size: 25px
+
+/* KORZYŚCI */
+.benefits p 
+	padding: 10%
+
+/* GALERIA */
+.picture-small, .journal, .shoes, .notes, .pendrive 
+	max-width: 50%
+
+.picture-big, .pencil, .window 
+	max-width: 100%
+
+/* ZESPÓŁ */
+.team [class*="col-"] 
+	padding: 0
+	width: 50%
+
+.team h2 
+	font-size: 18px
+
+.circle 
+	height: 120px
+	width: 120px
+
+/* SEKCJA Z OBRAZKIEM */
+.picture 
+	max-width: 100%
+	height: auto
+
+.ipad img 
+	max-width: 100%
+	height: auto
+	padding: 5% 5%
+
+.title-picture h2 
+	font-size: 15px
+	padding-top: 1%
+
+.title-picture p 
+	font-size: 13px
+	padding: 0 5%
+
+/* LICZBY */
+.numbers [class*="col-"] 
+	padding: 0
+	width: 50%
+
+.numbers h3 
+	font-size: 25px
+
+.numbers h4 
+	font-size: 15px
+	line-height: 5px
+
+/* KONTAKT */
+
+.contact-us [class*="col-"] 
+	padding: 0
+	width: 100%
+.contact-us 
+	text-align: center
+	height: auto
+	h2 
+		font-size: 15px
+		padding-top: 5px
+		padding-bottom: 5px
+		text-align: center
+
+	h2:before 
+		padding-right: 10px
+		letter-spacing: -3px
+		content: "-------"
+		color: #fff
+
+	h2:after 
+		padding-left: 10px
+		letter-spacing: -3px
+		content: "-------"
+		color: #fff
+
+	h4 
+		text-align: center
+
+	p 
+		font-size: 12px
+		text-align: center
+
+.social i 
+	text-align: center
+	font-size: 19px
+	margin: 20px 10px 0 10px
+
+/*MONITORY*/
+
+@media (min-width: 768px) and (max-width: 1199px) 
+	.col-m-1 
+		width: 8.33%
+	.col-m-2 
+		width: 16.66%
+	.col-m-3 
+		width: 25%
+	.col-m-4 
+		width: 33.33%
+	.col-m-5 
+		width: 41.66%
+	.col-m-6 
+		width: 50%
+	.col-m-7 
+		width: 58.33%
+	.col-m-8 
+		width: 66.66%
+	.col-m-9 
+		width: 75%
+	.col-m-10 
+		width: 83.33%
+	.col-m-11 
+		width: 91.66%
+	.col-m-12 
+		width: 100%
+	.col-offset-m-0 
+		margin-left: 0
+
+/* NAGŁOWEK */
+header 
+	height: auto
+
+/* SEKCJA POWITALNA */
+.hero 
+	height: 60vh
+	display: flex
+	justify-content: flex-end
+	align-items: center
+
+.slogan 
+	max-width: 80%
+	margin-top: 75px
+
+	h1 
+		font-size: 30px
+
+	h2 
+		font-size: 30px
+
+/* KORZYŚCI */
+.benefits p 
+	padding: 2.5%
+
+.works 
+	padding: 5%
+
+	p 
+		padding: 2.5%
+
+/* GALERIA */
+.team [class*="col-"] 
+	padding: 0
+	width: 50%
+
+.team h2 
+	font-size: 22px
+
+.circle 
+	height: 200px
+	width: 200px
+
+/* LICZBY */
+.numbers h3 
+	font-size: 39px
+
+.numbers h4 
+	font-size: 22px
+
+/* KONTAKT */
+.contact-us [class*="col-"] 
+	padding: 0.7%
+
+.contact-us 
+	height: auto
+
+	h2 
+		font-size: 22px
+
+	h2:after 
+		padding-left: 10px
+		letter-spacing: -3px
+		content: "-------"
+		color: #fff
+
+	h4 
+		font-size: 15px
+
+	p 
+		font-size: 11.5px
+
+.social i 
+	font-size: 16px
+	height: 34px
+	width: 34px
